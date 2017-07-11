@@ -75,16 +75,16 @@
 			<!-- flash可以放这里 -->
 		</div>
 		<div class="main-container">
-			<!-- 第一屏 -->
-			<div class="ping1" style="display: none;">
+			<!-- 第一个选项卡-走进绿时代 -->
+			<div class="ping ping1" style="display: none;">
 				<div class="main-title">走进绿时代<span class="main-title-e">ABOUT</span></div>
 				<a href="" class="more">MORE+</a>
 				<div class="line"></div>
 				<div class="main-text">&emsp;&emsp;江西省绿时代生态科技发展有限公司成立于2016年6月，注册资金2000万元，是由江粮集团、省林科院联合成立的大型现代生态科技国有企业。公司运用省林科院的强大科技支撑及省大成国资管理公司平台，以改善人居环境，提升人民居住质量为己任，运用现代林业工程技术及最新科技成果，专业致力于环境生态修复、林业碳汇交易、园林景观设计与施工、林业勘探调查设计及特种苗木种植经营。公司在大成国资管理公司、江粮集团、省林科院的大力支持和坚强领导下，充分发挥自身优势，以“市场运营+技术服务+成果转化”为发展核心，在迅速占领市场基础上，引领行业发展，推动生态文明建设。</div>
 				<div class="main-pic"><img src="images/mian-pic.png" alt=""></div>
 			</div>
-			<!-- 第二屏 -->
-			<div class="ping2" style="display: none;">
+			<!-- 第二个选项卡-公司动态 -->
+			<div class="ping ping2" style="display: none;">
 				<div class="main-title">公司动态<span class="main-title-e">NEWS</span></div>
 				<a href="" class="more">MORE+</a>
 				<div class="line"></div>
@@ -102,12 +102,168 @@
 					<li><a href="" class="news-list-a">生态开发的投资与运营，即要金山银山，也要绿水青山</a><span>2017-07-10</span></li>
 				</ul>
 			</div>
+			<!-- 第三个选项卡-主营业务 -->
+			<div class="ping ping3" style="display: none;">
+				<div class="main-title">主营业务<span class="main-title-e">ABOUT</span></div>
+				<a href="" class="more">MORE+</a>
+				<div class="line"></div>
+				<ul class="business-list">
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 第四个选项卡-项目案例 -->
+			<div class="ping ping4" style="display: none;">
+				<div class="main-title">项目案例<span class="main-title-e">ABOUT</span></div>
+				<a href="" class="more">MORE+</a>
+				<div class="line"></div>
+				<ul class="case-list">
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/business-pic1.png" alt="">
+							<div>园林工程</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 第五个选项卡-项目案例 -->
+			<div class="ping ping5" style="display: none;">
+				<div class="main-title">联系我们<span class="main-title-e">CONTACT</span></div>
+				<div class="ct">
+					<a href="jacascript:" class="ct1 ct-on">联系我们</a>
+					<a href="jacascript:" class="ct2">招聘信息</a>
+				</div>
+				<a href="" class="more">MORE+</a>
+				<div class="line"></div>
+				<!-- 联系我们选项卡 -->
+				<div class="ct-tab-1" style="display: block;">
+					<!--百度地图容器-->
+					<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+					<div style="width: 709px; height: 295px; border:#fff solid 8px;" id="dituContent"></div>
+					<div class="ct-add">地址：江西省南昌市经开区枫林西大街1629号<br>邮箱：18720990402@qq.com&emsp;联系电话：187209904</div>
+				</div>
+				<!-- 招聘信息选项卡 -->
+				<script>
+					$(document).ready(function(){
+						$('.zp-head').click(function(){
+							$(this).parents(".zp-li").find(".zp-bom").slideToggle();
+							$(this).toggleClass("le_on1");
+						});
+					});
+				</script>
+				<ul class="zp-ul" style="display: none;">
+					<li class="zp-li">
+						<div class="zp-head"><span class="sp1">总经理助理</span><span class="sp2">南昌<span class="sp2-line">|</span>3人<span class="sp2-line">|</span>2017-07-11</span></div>
+						<div class="zp-bom" style="">
+							工作地点：全国营销中心<br />
+							主要工作职责：<br />
+							1、负责区域项目的市场规划、方案制定及推广活动的组织实施；<br />
+							2、负责区域项目的产品销售、渠道建设、开发等目标的分解达成；<br />
+							3、负责行业市场信息收集（产品、价格、营销政策的动态），并辅助制定相应的策略。  
+						</div>
+					</li> 
+					<li class="zp-li">
+						<div class="zp-head"><span class="sp1">总经理助理</span><span class="sp2">南昌<span class="sp2-line">|</span>3人<span class="sp2-line">|</span>2017-07-11</span></div>
+						<div class="zp-bom">
+							工作地点：全国营销中心<br />
+							主要工作职责：<br />
+							1、负责区域项目的市场规划、方案制定及推广活动的组织实施；<br />
+							2、负责区域项目的产品销售、渠道建设、开发等目标的分解达成；<br />
+							3、负责行业市场信息收集（产品、价格、营销政策的动态），并辅助制定相应的策略。  
+						</div>
+					</li>
+					<li class="zp-li">
+						<div class="zp-head"><span class="sp1">总经理助理</span><span class="sp2">南昌<span class="sp2-line">|</span>3人<span class="sp2-line">|</span>2017-07-11</span></div>
+						<div class="zp-bom" style="">
+							工作地点：全国营销中心<br />
+							主要工作职责：<br />
+							1、负责区域项目的市场规划、方案制定及推广活动的组织实施；<br />
+							2、负责区域项目的产品销售、渠道建设、开发等目标的分解达成；<br />
+							3、负责行业市场信息收集（产品、价格、营销政策的动态），并辅助制定相应的策略。  
+						</div>
+					</li> 
+					<li class="zp-li">
+						<div class="zp-head"><span class="sp1">总经理助理</span><span class="sp2">南昌<span class="sp2-line">|</span>3人<span class="sp2-line">|</span>2017-07-11</span></div>
+						<div class="zp-bom" style="">
+							工作地点：全国营销中心<br />
+							主要工作职责：<br />
+							1、负责区域项目的市场规划、方案制定及推广活动的组织实施；<br />
+							2、负责区域项目的产品销售、渠道建设、开发等目标的分解达成；<br />
+							3、负责行业市场信息收集（产品、价格、营销政策的动态），并辅助制定相应的策略。  
+						</div>
+					</li> 
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="bottom-nav">
 		<ul class="bn-menu">
 			<li class="bn-on">
-				<a href="javascript:" class="company" style="color: #fff;">
+				<a href="javascript:" class="company bn-menu-a">
 					<div class="bn-box">
 						<div class="bn-icon" style="background-image: url(images/bn-company.png);"></div>
 						<div class="bn-title">走进新时代</div>
@@ -119,7 +275,7 @@
 				</a>
 			</li>
 			<li class="">
-				<a href="javascript:" class="news" style="color: #fff;">
+				<a href="javascript:" class="news bn-menu-a">
 					<div class="bn-box">
 						<div class="bn-icon" style="background-image: url(images/bn-news.png);"></div>
 						<div class="bn-title">公司动态</div>
@@ -132,42 +288,47 @@
 				</a>
 			</li>
 			<li class="">
-				<a href="">
+				<a href="javascript:" class="business bn-menu-a">
 					<div class="bn-box">
-						<div class="bn-icon" style="background-image: url(images/bn-company.png);"></div>
-						<div class="bn-title">走进新时代</div>
+						<div class="bn-icon" style="background-image: url(images/bn-business.png);"></div>
+						<div class="bn-title">主营业务</div>
 					</div>
 					<div class="bn-img" style="background-image: url(images/bn-img1.png);"></div>
+					<div class="bn-text">生态修复、特种苗木...
+						<a href="" class="bn-more">更多&gt;</a>
+					</div>
 				</a>
-				<div class="bn-text">生态修复、特种苗木...
-					<a href="" class="bn-more">更多&gt;</a>
-				</div>
 			</li>
 			<li class="">
-				<a href="">
+				<a href="javascript:" class="case bn-menu-a">
 					<div class="bn-box">
-						<div class="bn-icon" style="background-image: url(images/bn-company.png);"></div>
-						<div class="bn-title">走进新时代</div>
+						<div class="bn-icon" style="background-image: url(images/bn-case.png);"></div>
+						<div class="bn-title">项目案例</div>
 					</div>
 					<div class="bn-img" style="background-image: url(images/bn-img1.png);"></div>
+					<div class="bn-text">生态修复、特种苗木...
+						<a href="" class="bn-more">更多&gt;</a>
+					</div>
 				</a>
-				<div class="bn-text">生态修复、特种苗木...
-					<a href="" class="bn-more">更多&gt;</a>
-				</div>
 			</li>
 			<li class="">
-				<a href="">
+				<a href="javascript:" class="contact bn-menu-a">
 					<div class="bn-box">
-						<div class="bn-icon" style="background-image: url(images/bn-company.png);"></div>
-						<div class="bn-title">走进新时代</div>
+						<div class="bn-icon" style="background-image: url(images/bn-contact.png);"></div>
+						<div class="bn-title">联系我们</div>
 					</div>
 					<div class="bn-img" style="background-image: url(images/bn-img1.png);"></div>
+					<div class="bn-text">生态修复、特种苗木...
+						<a href="" class="bn-more">更多&gt;</a>
+					</div>
 				</a>
-				<div class="bn-text">生态修复、特种苗木...
-					<a href="" class="bn-more">更多&gt;</a>
-				</div>
 			</li>
 		</ul>
+	</div>
+	<div class="footer">
+		<div class="foo-center">
+			COPYRIGHT 2017 江西省绿时代生态科技发展有限公司 版权所有 赣ICP备835697号-2<br>地址：江西省南昌市经开区枫林西大街1629号    传真：0791-83805626     技术支持：<a href="http://www.yunduancn.com">云端科技</a>
+		</div>
 	</div>
 	<script src="js/index.js"></script>
 </body>
