@@ -1,62 +1,50 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/* reset.css */
+html {overflow-x:hidden}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td,textarea{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 'Microsoft YaHei','SimSun',Tahoma,Geneva,sans-serif;color:#333; background:#fff}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+a{color:#333;text-decoration:none}
 
-a {
-	text-decoration: none;
-}
+a,a:active,a:focus,input{outline:none;}
+.clear:after,.cf:after{content:'.';display:block;height:0;visibility:hidden;clear:both}
+.clear,.cf{*zoom:1}
+.cleafix{height:0;clear:both;font-size:0;overflow:hidden}
+/* my通用css */
+.fl {float:left}
+.fr {float:right}
+.abs{position:absolute}
+.rel{position:relative}
+.center{margin:0px auto}
+.flex { width:1000px; margin:0 auto; overflow:hidden} 
+.yfont { color:#e12401}
+.bfont { color:#13bfd9}
+.lfont { color:#6db005}
+.pfont { color:#f9607e}
+.gfont { color:#999} 
+.fred { color:#f00}
+.ml0 { margin-left:0px}
+.ml10 { margin-left:10px}
+.mt5 { margin-top:5px}
+.mt15 { margin-top:15px}
+.mt20 { margin-top:20px}
+.mt30 { margin-top:30px}
+.mt40 { margin-top:40px}
+.b0 { border:none}
+.bg0 { background:none}
+/* 共用css */
+.tong{width: 1100px;margin: 0px auto;overflow: hidden;position: relative;}
+.tong2{width: 1100px;margin: 0px auto;position: relative;}
+.clear{clear:both;}
+.po-r{position: relative;}
+.po-a{position: absolute;}
+.ov{overflow: hidden;}
 
-
-
-
-
-/*我的自定义样式*/
-.space {
-	font-size: 0;
-	-webkit-text-size-adjust: none;
-}
-
-
-body {
-	overflow-x: hidden;
-}
 
 
 .clear {
