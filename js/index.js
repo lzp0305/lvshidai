@@ -1,14 +1,3 @@
-// $(document).ready(function(){
-// 	$('.bn-menu>li').mouseover(function() {
-// 		// $('.bn-menu').find('.bn-on').addClass('linshi');
-// 		$('.bn-on').removeClass('bn-on');
-// 	});
-// 	$('.bn-menu>li').mouseout(function() {
-// 		$('.linshi').addClass('bn-on');
-// 		// $('.linshi').removeClass('linshi');
-// 	});
-// })
-
 $(document).ready(function(){
 	$('.ping1').css('display', 'block');
 	$('.company').click(function() {
