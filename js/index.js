@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.ping1').css('display', 'block');
+	// $('.ping1').css('display', 'block');
 	$('.company').click(function() {
 		$('.ping1').css('display', 'block');
 		$('.ping2').css('display', 'none');
